@@ -72,3 +72,84 @@ GARCH forecasting provided marginal but consistent improvements in risk manageme
 
 ---
 
+## Requirements
+
+**Python 3.12.4**
+- pandas 2.3.3
+- numpy 1.26.4
+- bt 1.1.2
+- scipy 1.16.1
+- matplotlib 3.8.4
+- seaborn 0.13.2
+- yfinance 0.2.66
+- python-dateutil 2.9.0
+
+**R 4.5.1**
+- rugarch 1.5.4
+- readxl 1.4.5
+- writexl 1.5.4
+- zoo 1.8.14
+- parallel 4.5.2
+- doParallel 1.0.17
+- foreach 1.5.2
+
+**Installation:**
+```bash
+# Python packages
+pip install pandas numpy bt scipy matplotlib seaborn yfinance python-dateutil
+
+# R packages
+install.packages(c("rugarch", "readxl", "writexl", "zoo", "doParallel", "foreach"))
+```
+
+---
+
+## Usage
+
+Run the notebooks in the following sequence:
+
+**1. Data Extraction**
+```bash
+data_extraction.ipynb
+```
+Fetches S&P 500 stock data from yfinance, cleans missing values, and prepares dataset for analysis.
+
+**2. Expected Returns Calculation**
+```bash
+Bayes_stein_returns.ipynb
+```
+Computes Bayes-Stein shrinkage expected returns using rolling 2-month windows.
+
+**3. Volatility Estimation**
+```bash
+volatility_prediction.ipynb
+```
+Calculates historical volatility from log returns and estimates GARCH(1,1) forecasted volatility using R kernel with parallel processing.
+
+**4. Portfolio Optimization**
+```bash
+portfolio_weights.ipynb
+```
+Generates optimal portfolio weights for both GARCH and historical volatility approaches using mean-variance optimization.
+
+**5. Backtesting**
+```bash
+backtesting_analysis.ipynb  # BT library backtesting
+backtesting.ipynb           # Daily returns backtesting with transaction costs
+```
+Evaluates portfolio performance, calculates Sharpe ratios, drawdowns, and compares both volatility approaches.
+
+---
+
+## License
+This project is licensed under the MIT License.
+
+## Author
+Jatin - Quantitative Research Intern at Effectual Capital GmbH
+- GitHub: [https://github.com/JATINDHURVE]
+- LinkedIn: [https://www.linkedin.com/in/jatin-dhurve/]
+
+## Acknowledgments
+- S&P 500 data provided by Yahoo Finance via yfinance
+- GARCH implementation using rugarch package in R
+
