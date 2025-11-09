@@ -1,4 +1,4 @@
-#### GARCH-Forecasted-vs-Historical-Volatility-in-Mean-Variance-Optimization
+# GARCH-Forecasted-vs-Historical-Volatility-in-Mean-Variance-Optimization
 
 ## Project Overview
 
