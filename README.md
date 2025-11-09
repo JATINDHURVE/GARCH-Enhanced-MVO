@@ -1,5 +1,18 @@
 # GARCH-Forecasted-vs-Historical-Volatility-in-Mean-Variance-Optimization
 
+![Python](https://img.shields.io/badge/Python-3.12.4-blue)
+![R](https://img.shields.io/badge/R-4.5.1-276DC3)
+![License](https://img.shields.io/badge/License-Apache%202.0-green)
+
+## Table of Contents
+- [Project Overview](#project-overview)
+- [Methodology](#methodology)
+- [Key Features](#key-features)
+- [Results](#results)
+- [Requirements](#requirements)
+- [Usage](#usage)
+- [License](#license)
+
 ## Project Overview
 
 Compares GARCH-forecasted volatility versus historical volatility in mean-variance portfolio optimization using S&P 500 stocks. Implements monthly rebalancing with rolling window estimation to evaluate whether sophisticated volatility forecasting improves risk-adjusted returns through Sharpe ratios and drawdown analysis.
@@ -142,7 +155,7 @@ Evaluates portfolio performance, calculates Sharpe ratios, drawdowns, and compar
 ---
 
 ## License
-This project is licensed under the MIT License.
+This project is licensed under the Apache-2.0 license.
 
 ## Author
 Jatin - Quantitative Research Intern at Effectual Capital GmbH
@@ -152,4 +165,3 @@ Jatin - Quantitative Research Intern at Effectual Capital GmbH
 ## Acknowledgments
 - S&P 500 data provided by Yahoo Finance via yfinance
 - GARCH implementation using rugarch package in R
-
